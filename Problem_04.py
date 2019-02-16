@@ -2,6 +2,7 @@ def is_palindrome(number):
     number = str(number)
     return number == number[::-1]
 
+
 def largest_palindrome(min_value, max_value):
     max = 0
     for i in range(min_value, max_value):
@@ -12,4 +13,5 @@ def largest_palindrome(min_value, max_value):
                     max = prod
     return max
 
-print largest_palindrome(100, 1000)
+
+print(largest_palindrome(100, 1000))
